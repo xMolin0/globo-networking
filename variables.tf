@@ -15,11 +15,12 @@ variable "prefix" {
 
 variable "environment" {
   type        = string
-  description = "(Optional) Environment to use for all resources in this module. Default: dev"
+  description = "(Required) Environment to use for all resources in this module. Default: dev"
 }
 
 variable "billing_code" {
   type = string
+  description = "(Required) Billing code to use for all resources in this module."
 }
 
 variable "cidr_block" {
